@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "442027136667",
+    "firebase_url": "https://notember-d51d2.firebaseio.com",
+    "project_id": "notember-d51d2",
+    "storage_bucket": "notember-d51d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442027136667:android:9abb378f13bc637e",
+        "android_client_info": {
+          "package_name": "com.example.notembernew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442027136667-8gfhfufj8pbe3il3mkmlbu6up5m8pbgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXXMrCIR8o5U_ZU9FrK8Ab17A4663jjtE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442027136667-8gfhfufj8pbe3il3mkmlbu6up5m8pbgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

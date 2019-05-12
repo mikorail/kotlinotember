@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activities.AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:theme="@style/AppTheme.AppBarOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="8dp"
+                                android:contentDescription="@string/icon"
+                                android:src="@drawable/launch_icon" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="8dp"
+                                    android:text="@string/app_name"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="8dp"
+                                    android:text="Note dan Reminder"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/versionText"
+                            style="@style/ButtonTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_info_outline_accent_24dp"
+                            android:drawablePadding="8dp"
+                            android:drawableStart="@drawable/ic_info_outline_accent_24dp"
+                            android:gravity="start|center_vertical"
+                            android:minHeight="56dp"
+                            android:text="@string/version"
+                            android:textAlignment="textStart" />
+
+                        <TextView
+                            style="@style/ButtonTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_replay_black_24dp"
+                            android:drawableLeft="@drawable/launch_icon"
+                            android:drawablePadding="8dp"
+                            android:gravity="start|center_vertical"
+                            android:minHeight="5dp"
+                            android:onClick="showIntro"
+                            android:text="@string/see_intro"
+                            android:textAlignment="textStart" />
+
+                        <TextView
+                            style="@style/ButtonTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_share_accent_24dp"
+                            android:drawablePadding="8dp"
+                            android:drawableStart="@drawable/ic_share_accent_24dp"
+                            android:gravity="start|center_vertical"
+                            android:minHeight="56dp"
+                            android:onClick="shareApp"
+                            android:text="@string/share_app"
+                            android:textAlignment="textStart" />
+
+                        <TextView
+                            style="@style/ButtonTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_star_border_accent_24dp"
+                            android:drawablePadding="8dp"
+                            android:drawableStart="@drawable/ic_star_border_accent_24dp"
+                            android:gravity="start|center_vertical"
+                            android:minHeight="56dp"
+                            android:onClick="onLinkClick"
+                            android:text="@string/rate_app"
+                            android:textAlignment="textStart" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="Kelompok 7 B1 KOMSI UGM"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_margin="8dp"
+                                android:src="@drawable/launch_icon" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:minHeight="64dp"
+                                android:padding="16dp"
+                                android:text="Dibuat Oleh Melania Fitriansa, Vicky Hermawan, Pratita Sujatmika"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/ButtonTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_mail_outline_accent_24dp"
+                            android:drawablePadding="8dp"
+                            android:drawableStart="@drawable/ic_mail_outline_accent_24dp"
+                            android:gravity="start|center_vertical"
+                            android:minHeight="56dp"
+                            android:onClick="feedback"
+                            android:text="@string/feedback"
+                            android:textAlignment="textStart" />
+
+                        <TextView
+                            style="@style/ButtonTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_repository_accent_24dp"
+                            android:drawablePadding="8dp"
+                            android:drawableStart="@drawable/ic_repository_accent_24dp"
+                            android:gravity="start|center_vertical"
+                            android:minHeight="56dp"
+                            android:onClick="onLinkClick"
+                            android:text="@string/github"
+                            android:textAlignment="textStart" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardElevation="4dp">
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

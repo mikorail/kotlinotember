@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "283492412110",
+    "firebase_url": "https://cobanotes.firebaseio.com",
+    "project_id": "cobanotes",
+    "storage_bucket": "cobanotes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283492412110:android:4eaf08125fecb242",
+        "android_client_info": {
+          "package_name": "com.example.neotember"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283492412110-asq9iu1vlm3lvcgor4e7mi7ae91t0q43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcx2PNCh3mekC_5jZq4vSdqKdHifH0ucA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283492412110-asq9iu1vlm3lvcgor4e7mi7ae91t0q43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

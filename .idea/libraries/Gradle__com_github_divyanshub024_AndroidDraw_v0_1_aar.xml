@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.divyanshub024:AndroidDraw:v0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ded60b1121bff909f5ec9ee8a5485e5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ded60b1121bff909f5ec9ee8a5485e5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.divyanshub024/AndroidDraw/v0.1/809bd74c148776fdc070c8d7a97cf460e1d3fa37/AndroidDraw-v0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
