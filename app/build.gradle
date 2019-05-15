@@ -78,11 +78,14 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
     implementation 'com.heinrichreimersoftware:material-intro:1.6'
     compile "androidx.core:core-ktx:+"
+
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
 
 }
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android-extensions'
+
 repositories {
     mavenCentral()
 }

@@ -8,25 +8,25 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
-import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_draw.*
-import kotlinx.android.synthetic.main.activity_image.*
 
 import android.os.Environment
 import android.util.Log
 import android.view.WindowManager
+import android.widget.Adapter
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.divyanshu.androiddraw.DrawAdapter
+import com.example.notembernew.ui.adapter.DrawAdapter
 import com.divyanshu.draw.activity.DrawingActivity
+
 import com.example.notembernew.R
 import kotlinx.android.synthetic.main.activity_draw.*
 import java.io.File
 import java.io.FileOutputStream
 import java.util.*
 import kotlin.collections.ArrayList
+
 
 private const val REQUEST_CODE_DRAW = 101
 private const val PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 102
@@ -35,7 +35,7 @@ class DrawActivity : AppCompatActivity() {
     lateinit var adapter: DrawAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_draw)
 
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
             != PackageManager.PERMISSION_GRANTED){
@@ -44,7 +44,7 @@ class DrawActivity : AppCompatActivity() {
                     PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE)
         }else{
             adapter = DrawAdapter(this,getFilesPath())
-            recycler_view.adapter=adapter
+            recycler_view.adapter= adapter
         }
         fab_add_draw.setOnClickListener {
             val intent = Intent(this, DrawingActivity::class.java)
