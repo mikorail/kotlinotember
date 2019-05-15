@@ -11,6 +11,7 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.notembernew.R
+import kotlinx.android.synthetic.main.activity_draw.*
 import com.example.notembernew.ui.ImageActivity
 import kotlinx.android.synthetic.main.item_view.view.*
 

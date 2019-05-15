@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity
         addNoteView.animate().translationYBy(convertDpToPixel(-52)).alpha(1f).setDuration(300).start();
         addDrawView.setVisibility(View.VISIBLE);
         addDrawView.setAlpha(0f);
-        addDrawView.animate().translationYBy(convertDpToPixel(-148)).alpha(1f).setDuration(300).start();
+        addDrawView.animate().translationYBy(convertDpToPixel(-152)).alpha(1f).setDuration(300).start();
         addListView.setVisibility(View.VISIBLE);
         addListView.setAlpha(0f);
         addListView.animate().translationYBy(convertDpToPixel(-100)).alpha(1f).setDuration(300).start();
