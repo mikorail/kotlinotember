@@ -109,7 +109,10 @@
         <meta-data
             android:name="android.app.default_searchable"
             android:value=".SearchResultsActivity" />
-
+        <activity android:name=".ui.DrawActivity">
+        </activity>
+        <activity android:name=".ui.ImageActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
             android:name=".ui.IntroActivity"
             android:label="@string/app_name"

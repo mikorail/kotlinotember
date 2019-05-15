@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity
     View fab;
     SharedPreferences pref;
     CardView adContainer;
-    View addNoteView, addListView, shadow;
-    View.OnClickListener fabClickListener, addNoteListener, addListListener;
+    View addNoteView, addListView,addDrawView, shadow;
+    View.OnClickListener fabClickListener, addNoteListener, addListListener,addDrawListener;
     boolean fabOpen = false;
     private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
         @Override
@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity
 
         fab = findViewById(R.id.fab);
         addNoteView = findViewById(R.id.note_fab);
+        addDrawView =findViewById(R.id.draw_fab);
         addListView = findViewById(R.id.list_fab);
         shadow = findViewById(R.id.shadow);
 
@@ -125,6 +126,18 @@ public class MainActivity extends AppCompatActivity
             }
         };
 
+        addDrawListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                closeFabMenu();
+                Intent i = new Intent(MainActivity.this, DrawActivity.class);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this);
+                    startActivity(i, options.toBundle());
+                } else startActivity(i);
+
+            }
+        };
         addNoteListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -194,6 +207,9 @@ public class MainActivity extends AppCompatActivity
         addNoteView.setVisibility(View.VISIBLE);
         addNoteView.setAlpha(0f);
         addNoteView.animate().translationYBy(convertDpToPixel(-52)).alpha(1f).setDuration(300).start();
+        addDrawView.setVisibility(View.VISIBLE);
+        addDrawView.setAlpha(0f);
+        addDrawView.animate().translationYBy(convertDpToPixel(-148)).alpha(1f).setDuration(300).start();
         addListView.setVisibility(View.VISIBLE);
         addListView.setAlpha(0f);
         addListView.animate().translationYBy(convertDpToPixel(-100)).alpha(1f).setDuration(300).start();
@@ -206,6 +222,7 @@ public class MainActivity extends AppCompatActivity
                 fab.setOnClickListener(fabClickListener);
                 addNoteView.setOnClickListener(addNoteListener);
                 addListView.setOnClickListener(addListListener);
+                addDrawView.setOnClickListener(addDrawListener);
             }
         }, 300);
     }

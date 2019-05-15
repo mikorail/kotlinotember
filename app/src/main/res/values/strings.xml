@@ -199,4 +199,6 @@
     <string name="moved_to_trash">Moved to trash</string>
     <string name="github">Github</string>
     <string name="notes_provider">Notes Provider</string>
+    <string name="enter_file_name">Enter file name</string>
+    <string name="new_draw_note">New Draw Note</string>
 </resources>
