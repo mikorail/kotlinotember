@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.test.espresso:espresso-core:3.1.0-alpha4@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1a82478d85c14b580039b0adf5084f7a/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1a82478d85c14b580039b0adf5084f7a/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/90b6150236f2c3ec96aab29e8fdabbf1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/90b6150236f2c3ec96aab29e8fdabbf1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test.espresso/espresso-core/3.1.0-alpha4/b338f18a8cedbe3ccb842c3fc439493bf1d076f1/espresso-core-3.1.0-alpha4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/androidx.test.espresso/espresso-core/3.1.0-alpha4/b338f18a8cedbe3ccb842c3fc439493bf1d076f1/espresso-core-3.1.0-alpha4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

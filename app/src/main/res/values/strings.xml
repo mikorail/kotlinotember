@@ -56,7 +56,7 @@
     <string name="create_note">Create new note</string>
     <string name="new_note">New note</string>
     <string name="new_checklist">New checklist</string>
-    <string name="tap_create_note">Tap to create a new note in NotePal</string>
+    <string name="tap_create_note">Tap to create a new note in Notember</string>
     <string name="delete">Delete</string>
     <string name="confirm_delete">Are you sure you want to delete all notes? This action cannot be undone!</string>
     <string name="confirm_clear_notifications">Are you sure you want to clear all notifications?</string>
@@ -184,7 +184,7 @@
     <string name="save_exit">Save and exit</string>
     <string name="share_info">Share app info</string>
     <string name="share_info_sub">When sharing notes and lists</string>
-    <string name="shared_using">Shared using NotePal</string>
+    <string name="shared_using">Shared using Notember</string>
     <string name="home">Home</string>
     <string name="checklists">Checklists</string>
     <string name="channel_name_default">Default</string>
