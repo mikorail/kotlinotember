@@ -65,6 +65,7 @@
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".ui.SettingsActivity"
+            android:parentActivityName=".ui.MainActivity"
             android:label="@string/action_settings"
             android:theme="@style/AppTheme.NoActionBar" />
 
@@ -109,7 +110,10 @@
         <meta-data
             android:name="android.app.default_searchable"
             android:value=".SearchResultsActivity" />
-        <activity android:name=".ui.DrawActivity">
+        <activity
+            android:name=".ui.DrawActivity"
+            android:parentActivityName=".ui.MainActivity"
+            android:label="Sketch Notes">
         </activity>
         <activity android:name=".ui.ImageActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>

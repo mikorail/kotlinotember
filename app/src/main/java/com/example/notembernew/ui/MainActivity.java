@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity
         addNoteView.animate().translationYBy(convertDpToPixel(-52)).alpha(1f).setDuration(300).start();
         addDrawView.setVisibility(View.VISIBLE);
         addDrawView.setAlpha(0f);
-        addDrawView.animate().translationYBy(convertDpToPixel(-152)).alpha(1f).setDuration(300).start();
+        addDrawView.animate().translationYBy(convertDpToPixel(-148)).alpha(1f).setDuration(300).start();
         addListView.setVisibility(View.VISIBLE);
         addListView.setAlpha(0f);
         addListView.animate().translationYBy(convertDpToPixel(-100)).alpha(1f).setDuration(300).start();
@@ -231,6 +231,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(null);
         ObjectAnimator.ofFloat(fab, "rotation", 45f, 0f).start();
         fabOpen = false;
+        addDrawView.animate().translationYBy(convertDpToPixel(148)).alpha(0f).setDuration(300).start();
         addNoteView.animate().translationYBy(convertDpToPixel(52)).alpha(0f).setDuration(300).start();
         addListView.animate().translationYBy(convertDpToPixel(100)).alpha(0f).setDuration(300).start();
         shadow.animate().alpha(0f).setDuration(300).start();
@@ -239,9 +240,11 @@ public class MainActivity extends AppCompatActivity
             public void run() {
                 addNoteView.setVisibility(View.GONE);
                 addListView.setVisibility(View.GONE);
+                addDrawView.setVisibility( View.GONE);
                 shadow.setVisibility(View.GONE);
                 addNoteView.setOnClickListener(null);
                 addListView.setOnClickListener(null);
+                addDrawView.setOnClickListener(null);
                 fab.setOnClickListener(fabClickListener);
             }
         }, 300);
