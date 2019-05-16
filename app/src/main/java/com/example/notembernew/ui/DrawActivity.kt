@@ -17,7 +17,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.notembernew.ui.adapter.DrawAdapter
 import com.divyanshu.draw.activity.DrawingActivity
-
+import kotlinx.android.synthetic.main.dialog_save.*
 import com.example.notembernew.R
 import kotlinx.android.synthetic.main.activity_draw.*
 import java.io.File

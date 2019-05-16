@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: thedorkknightrises.lib:checklistview:0.4.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/15334e2caf44754d752e24c1afa42701/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/15334e2caf44754d752e24c1afa42701/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/f60eba059f9045b30d17edabff89b23b/res" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/f60eba059f9045b30d17edabff89b23b/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/thedorkknightrises.lib/checklistview/0.4.0/46d1654c953c9baf79e971df5ecc49801e170b91/checklistview-0.4.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/thedorkknightrises.lib/checklistview/0.4.0/46d1654c953c9baf79e971df5ecc49801e170b91/checklistview-0.4.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
