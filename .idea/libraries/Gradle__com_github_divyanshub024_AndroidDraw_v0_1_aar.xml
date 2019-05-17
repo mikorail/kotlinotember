@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.divyanshub024:AndroidDraw:v0.1@aar">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/32c21b849c292d6a3293c8ecda9ba01e/res" />
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/32c21b849c292d6a3293c8ecda9ba01e/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/9d880466f03e76b1ec79bf47960dbd26/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/9d880466f03e76b1ec79bf47960dbd26/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -1,77 +1,71 @@
 package com.example.notembernew.ui;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import com.example.notembernew.R;
+import com.github.paolorotolo.appintro.AppIntroFragment;
+import com.github.paolorotolo.appintro.model.SliderPage;
+import com.github.paolorotolo.appintro.AppIntro;
 import com.heinrichreimersoftware.materialintro.slide.SimpleSlide;
 
-public class IntroActivity extends com.heinrichreimersoftware.materialintro.app.IntroActivity  {
-
+public class IntroActivity extends AppIntro {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        /* Enable/disable skip button */
-        setButtonBackVisible(true);
-        setButtonBackFunction(BUTTON_BACK_FUNCTION_SKIP);
+        // Note here that we DO NOT use setContentView();
 
-        /* Enable/disable finish button */
-        setFinishEnabled(true);
-        setButtonNextVisible(true);
-        setButtonNextFunction(BUTTON_NEXT_FUNCTION_NEXT_FINISH);
+        // Add your slide fragments here.
+        // AppIntro will automatically generate the dots indicator and buttons.
+//        addSlide(firstFragment);
+//        addSlide(secondFragment);
+//        addSlide(thirdFragment);
+//        addSlide(fourthFragment);
 
+        // Instead of fragments, you can also use our default slide.
+        // Just create a `SliderPage` and provide title, description, background and image.
+        // AppIntro will do the rest.
+        SliderPage sliderPage = new SliderPage();
+        sliderPage.setTitle("Notember");
+        sliderPage.setDescription("Note untuk nota biasa,daftar/list,dan gambar");
+        sliderPage.setImageDrawable(R.drawable.logo_main);
+        sliderPage.setBgColor(R.color.white);
+        addSlide(AppIntroFragment.newInstance(sliderPage));
 
-        addSlide(new SimpleSlide.Builder()
-                .title(R.string.app_name)
-                .description(R.string.welcome)
-                .image(R.drawable.ic_launcher)
-                .background(R.color.colorPrimary)
-                .backgroundDark(R.color.colorPrimaryDark)
-                .build());
+        // OPTIONAL METHODS
+        // Override bar/separator color.
+        setBarColor(Color.parseColor("#3F51B5"));
+        setSeparatorColor(Color.parseColor("#2196F3"));
 
-        addSlide(new SimpleSlide.Builder()
-                .description(R.string.intro1)
-                .image(R.drawable.ic_add_white_24dp)
-                .background(R.color.colorPrimary)
-                .backgroundDark(R.color.colorPrimaryDark)
-                .build());
+        // Hide Skip/Done button.
+        showSkipButton(false);
+        setProgressButtonEnabled(false);
 
-        addSlide(new SimpleSlide.Builder()
-                .description(R.string.intro2)
-                .image(R.drawable.ic_archive_white_24dp)
-                .background(R.color.colorPrimary)
-                .backgroundDark(R.color.colorPrimaryDark)
-                .build());
-
-        addSlide(new SimpleSlide.Builder()
-                .description(R.string.intro3)
-                .image(R.drawable.ic_share_white_24dp)
-                .background(R.color.colorPrimary)
-                .backgroundDark(R.color.colorPrimaryDark)
-                .build());
-
-        addSlide(new SimpleSlide.Builder()
-                .description(R.string.intro4)
-                .image(R.drawable.ic_notifications_active_white_24dp)
-                .background(R.color.colorPrimary)
-                .backgroundDark(R.color.colorPrimaryDark)
-                .build());
-
-        addSlide(new SimpleSlide.Builder()
-                .description(R.string.intro5)
-                .image(R.drawable.ic_search_white_24dp)
-                .background(R.color.colorPrimary)
-                .backgroundDark(R.color.colorPrimaryDark)
-                .build());
-
-        addSlide(new SimpleSlide.Builder()
-                .description(R.string.intro6)
-                .image(R.drawable.ic_launcher)
-                .background(R.color.colorPrimary)
-                .backgroundDark(R.color.colorPrimaryDark)
-                .build());
-
+        // Turn vibration on and set intensity.
+        // NOTE: you will probably need to ask VIBRATE permission in Manifest.
+        setVibrate(true);
+        setVibrateIntensity(30);
     }
 
+    @Override
+    public void onSkipPressed(Fragment currentFragment) {
+        super.onSkipPressed(currentFragment);
+        // Do something when users tap on Skip button.
+    }
+
+    @Override
+    public void onDonePressed(Fragment currentFragment) {
+        super.onDonePressed(currentFragment);
+        // Do something when users tap on Done button.
+    }
+
+    @Override
+    public void onSlideChanged(@Nullable Fragment oldFragment, @Nullable Fragment newFragment) {
+        super.onSlideChanged(oldFragment, newFragment);
+        // Do something when the slide changes.
+    }
 }
