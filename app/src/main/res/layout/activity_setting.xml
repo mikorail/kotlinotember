@@ -271,21 +271,6 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/reminders_head"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:paddingEnd="8dp"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="8dp"
-                            android:paddingStart="8dp"
-                            android:paddingTop="8dp"
-                            android:text="@string/reminders"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="@color/colorAccent"
-                            android:textSize="14sp" />
-
                         <LinearLayout
                             android:id="@+id/reminder_sound_switch_row"
                             android:layout_width="match_parent"
@@ -295,19 +280,19 @@
                             android:gravity="center_vertical"
                             android:minHeight="80dp"
                             android:onClick="onCheckedChange"
-                            android:paddingBottom="@dimen/activity_horizontal_margin"
-                            android:paddingEnd="8dp"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="8dp"
                             android:paddingStart="8dp"
-                            android:paddingTop="@dimen/activity_horizontal_margin">
+                            android:paddingLeft="8dp"
+                            android:paddingTop="@dimen/activity_horizontal_margin"
+                            android:paddingEnd="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="@dimen/activity_horizontal_margin">
 
                             <LinearLayout
                                 android:id="@+id/reminder_sound_setting"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="8dp"
                                 android:layout_marginStart="8dp"
+                                android:layout_marginLeft="8dp"
                                 android:layout_weight="1"
                                 android:orientation="vertical">
 
@@ -333,6 +318,21 @@
                                 android:layout_height="wrap_content" />
 
                         </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/reminders_head"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingStart="8dp"
+                            android:paddingTop="8dp"
+                            android:text="@string/reminders"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
 
                         <LinearLayout
                             android:id="@+id/reminder_vibrate_switch_row"
@@ -594,93 +594,6 @@
 
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:id="@+id/drive_backup"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="?android:attr/selectableItemBackground"
-                            android:baselineAligned="false"
-                            android:clickable="true"
-                            android:gravity="center_vertical"
-                            android:minHeight="80dp"
-                            android:onClick="driveBackup"
-                            android:paddingBottom="@dimen/activity_horizontal_margin"
-                            android:paddingEnd="8dp"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="8dp"
-                            android:paddingStart="8dp"
-                            android:paddingTop="@dimen/activity_horizontal_margin">
-
-                            <LinearLayout
-                                android:id="@+id/drive_backup_row"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="8dp"
-                                android:layout_marginStart="8dp"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center_vertical"
-                                    android:paddingTop="4dp"
-                                    android:text="@string/backup_to_drive"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                                    android:textSize="18sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/backup_drive_sub" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/drive_restore_row"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="?android:attr/selectableItemBackground"
-                            android:baselineAligned="false"
-                            android:clickable="true"
-                            android:gravity="center_vertical"
-                            android:minHeight="80dp"
-                            android:onClick="driveRestore"
-                            android:paddingBottom="@dimen/activity_horizontal_margin"
-                            android:paddingEnd="8dp"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="8dp"
-                            android:paddingStart="8dp"
-                            android:paddingTop="@dimen/activity_horizontal_margin">
-
-                            <LinearLayout
-                                android:id="@+id/drive_restore"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="8dp"
-                                android:layout_marginStart="8dp"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center_vertical"
-                                    android:paddingTop="4dp"
-                                    android:text="@string/restore_from_drive"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                                    android:textSize="18sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/restore_drive_sub" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
 
                         <LinearLayout
                             android:id="@+id/reset_notes_row"

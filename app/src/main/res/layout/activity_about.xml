@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".ui.activities.AboutActivity">
+    tools:context=".ui.AboutActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -124,18 +124,7 @@
                             android:text="@string/share_app"
                             android:textAlignment="textStart" />
 
-                        <TextView
-                            style="@style/ButtonTextView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableLeft="@drawable/ic_star_border_accent_24dp"
-                            android:drawablePadding="8dp"
-                            android:drawableStart="@drawable/ic_star_border_accent_24dp"
-                            android:gravity="start|center_vertical"
-                            android:minHeight="56dp"
-                            android:onClick="onLinkClick"
-                            android:text="@string/rate_app"
-                            android:textAlignment="textStart" />
+
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -184,18 +173,6 @@
                                 android:textSize="18sp" />
                         </LinearLayout>
 
-                        <TextView
-                            style="@style/ButtonTextView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableLeft="@drawable/ic_mail_outline_accent_24dp"
-                            android:drawablePadding="8dp"
-                            android:drawableStart="@drawable/ic_mail_outline_accent_24dp"
-                            android:gravity="start|center_vertical"
-                            android:minHeight="56dp"
-                            android:onClick="feedback"
-                            android:text="@string/feedback"
-                            android:textAlignment="textStart" />
 
                         <TextView
                             style="@style/ButtonTextView"
