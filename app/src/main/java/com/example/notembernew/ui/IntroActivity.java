@@ -36,6 +36,19 @@ public class IntroActivity extends AppIntro {
         sliderPage.setBgColor(R.color.white);
         addSlide(AppIntroFragment.newInstance(sliderPage));
 
+        SliderPage sliderPage2 = new SliderPage();
+        sliderPage2.setTitle("Fiture");
+        sliderPage2.setDescription("Dapat menjadikan notes sebagai pengingat atau notifikasi");
+        sliderPage2.setImageDrawable(R.drawable.logo_main);
+        sliderPage2.setBgColor(R.color.white);
+        addSlide(AppIntroFragment.newInstance(sliderPage2));
+
+        SliderPage sliderPage3 = new SliderPage();
+        sliderPage3.setTitle("Kemudahan");
+        sliderPage3.setDescription("Tidak perlu login dan bisa membackup notes ke internal smartphone");
+        sliderPage3.setImageDrawable(R.drawable.logo_main);
+        sliderPage3.setBgColor(R.color.white);
+        addSlide(AppIntroFragment.newInstance(sliderPage3));
         // OPTIONAL METHODS
         // Override bar/separator color.
         setBarColor(Color.parseColor("#3F51B5"));
